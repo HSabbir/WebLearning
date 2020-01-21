@@ -1,0 +1,251 @@
+<html>
+    <head><title>This is page </title></head>
+    <body>
+        <form action="message.html">
+            <input id="uname" placeholder="user name" type="text"/><br><br>
+            <input id="pass" placeholder="password" type="password"/><br><br>
+
+            <button onclick="validate()" id="btn1" type="submit">Submit</button>
+        </form>
+        
+    <script type="text/javascript">
+       
+       function validate()
+       {
+           var uname=document.getElementById("uname");
+           var pass=document.getElementById("pass");
+
+           if(uname.value=="" || pass.value=="")
+           {
+               alert("Blank values not allowed");
+           }
+       }
+
+       /*
+       form validation 1
+
+       <form action="message.html">
+            <input id="uname" placeholder="user name" type="text"/><br><br>
+            <input id="pass" placeholder="password" type="password"/><br><br>
+
+            <button onclick="validate()" id="btn1" type="submit">Submit</button>
+        </form>
+        
+    <script type="text/javascript">
+       
+       function validate()
+       {
+           var uname=document.getElementById("uname");
+           var pass=document.getElementById("pass");
+
+           if(uname.value=="" || pass.value=="")
+           {
+               alert("Blank values not allowed");
+           }
+       }
+
+
+       onmouseover and onmouseout event in image
+
+       <body>
+        
+    <img id="img1" onmouseover="setnewImage()" onmouseout="setoldImage()" src="img/download.jpg"/>
+        
+    <script type="text/javascript">
+       
+       function setnewImage()
+       {
+            document.getElementById("img1").src="img/mash.jpg";
+            document.getElementById("img1").height="300";
+           //
+       }
+       function setoldImage()
+       {
+        document.getElementById("img1").src="img/download.jpg";
+        
+       }
+
+
+
+       get ilement by class name
+
+       <body>
+        <p>First</p>
+        <p>Second</p>
+        <p>Third</p>
+        <p>Four</p>
+
+    <button onclick="ChangeStyle()">ChangeStyle</button>
+        
+    <script type="text/javascript">
+       
+       function ChangeStyle()
+       {
+            var pera=document.getElementsByTagName("p");
+            pera[0].style.fontSize=22;
+            pera[1].style.color="blue";
+            pera[2].style.fontStyle="italic";
+       }
+
+
+       */
+
+
+       /*
+       
+       take input from sedlecvted box
+
+       <body>
+        <select id="selectbox">
+            <option value="Web Technology">Web Technology</option>
+            <option value="Design Pattern">Design Pattern</option>
+            <option value="Database 2">Database 2</option>
+        </select><br>
+        <button onclick="fn1()">Submit</button>
+    <script type="text/javascript">
+       
+       function fn1()
+       {
+            var select=document.getElementById("selectbox");
+            alert(select.options[select.selectedIndex].value);
+       }
+
+
+       */
+
+       /*
+       
+       taking input from radio button
+
+       <body>
+        <input id="rd1" name="grp1" type="radio" value="Yes">Yes</input><br>
+        <input id="rd2" name="grp1" type="radio" value="No">No</input><br>
+        <button onclick="fn1()" id="btn1">Submit</button>
+        
+    <script type="text/javascript">
+       
+       function fn1()
+       {
+            var rd1 = document.getElementById("rd1");
+            var rd2 = document.getElementById("rd2");
+
+            if(rd1.checked == true)
+                alert("Selected value : "+rd1.value);
+            else if(rd2.checked == true)
+                alert("Selected value : "+rd2.value);
+            else
+                alert("No value selected");
+       }
+       */
+        
+        /*
+        input from user
+
+        <body>
+        <input id="text1" placeholder="username"><br><br>
+        <input type="password" id="text2" placeholder="password"><br>
+        <button onclick="fn1()" id="btn1">Submit</button>
+        
+    <script type="text/javascript">
+       
+       function fn1()
+       {
+            var str = document.getElementById("text1").value;
+            alert("value inside the box is : "+str)
+       }
+        */
+
+        /*
+       dom with button and user input
+
+       <body>
+        <input id="text1" placeholder="username"><br><br>
+        <input type="password" id="text2" placeholder="password"><br>
+        <button onclick="fn1()" id="btn1">Submit</button>
+        
+    <script type="text/javascript">
+       
+       function fn1()
+       {
+            var str = document.getElementById("text1").value;
+            alert("value inside the box is : "+str)
+       }
+
+
+
+        dom manipulation
+        
+        <h1 id="heading1">I am Programmer </h1>
+        <button onclick="buttonClick()">Click </button>
+
+
+        function buttonClick()
+       {
+            var str=document.getElementById("heading1").innerHTML="I am sabbir";
+            alert(str);
+       }
+
+        */
+
+       
+        /*var mango={
+           name : "Himsagor",
+           value : 70,
+           printName : function()
+           {
+               document.write(mango.name +" " +mango.value + " tk");
+           }
+           
+       }
+
+       mango.available = "10";
+       mango.value =100;
+       mango.calPrice = function(amount)
+       {
+           document.write("price : "+amount*mango.value);
+       }
+       mango.calPrice(10);  
+       */
+
+
+
+       /*
+        function mango(name,price)
+       {
+           this.name=name;
+           this.price=price;
+           this.printName=function()
+           {
+               document.write("<br>Name : "+name+"<br> price : "+price);
+           }
+       }
+       
+            var m1= new mango("Himsagor",60);
+            m1.printName();
+            var m2= new mango("Fazli",100);
+            m2.printName();
+
+
+
+       var mango={
+           name : "Himsagor",
+           value : 70,
+           printName : function()
+           {
+               document.write(mango.name +" " +mango.value + " tk");
+           }
+           
+       }
+
+       mango.printName();
+       
+       
+       document.write("Hi");
+document.write("Hopina kno");
+document.write("hi amio pari moner hosse...yes yes")
+*/
+    </script>
+    </body>
+</html>
+
+
